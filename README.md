@@ -6,9 +6,7 @@ Este projeto contém uma pipeline de dados utilizando Apache Airflow para orques
 
 - Python
 - Apache Airflow
-- DBT
-- Postgres
-- Great Expectations (TO DO)
+- Postgres SQL
 - Docker / Docker Compose
 
 

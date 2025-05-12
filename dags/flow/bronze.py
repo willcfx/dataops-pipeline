@@ -62,3 +62,7 @@ def camada_bronze():
         verificar_atualizacao() >> anos_task >> exportacoes >> importacoes >> download_aux_task
 
     return bronze_group
+
+
+
+

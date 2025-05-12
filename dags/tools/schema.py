@@ -1,9 +1,8 @@
-# schema.py
-
 from sqlalchemy import TEXT, Text, DateTime, String
 
 # Mapeamento dos tipos de dados para as tabelas
 SCHEMA = {
+    # Outras tabelas
     'silver.d_blocos': {
         'co_pais': TEXT,
         'co_bloco': TEXT,
@@ -128,5 +127,18 @@ SCHEMA = {
         'vl_frete': TEXT,
         'vl_seguro': TEXT,
         'data_carga': DateTime
+    },
+
+    'gold.fact_comercio_exterior': {
+        'co_ano': TEXT,
+        'co_mes': TEXT,
+        'co_ncm': TEXT,
+        'co_pais': TEXT,
+        'sg_uf_ncm': TEXT,
+        'co_via': TEXT,
+        'co_urf': TEXT,
+        'kg_liquido': TEXT,
+        'vl_fob': TEXT, 
+        'tipo_mov': TEXT
     }
 }

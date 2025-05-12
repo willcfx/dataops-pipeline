@@ -35,7 +35,7 @@ class ExportacoesLoader:
         try:
             with open(json_path, 'r') as f:
                 db_config = json.load(f)
-            return db_config
+            return db_config[0]
         except Exception as e:
             logger.error(f"Erro ao carregar configurações do banco de dados: {e}")
             raise

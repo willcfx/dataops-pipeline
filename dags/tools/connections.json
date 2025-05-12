@@ -1,13 +1,13 @@
-
-    {
-      "conn_id": "postgres_conn",
-      "conn_type": "postgres",
-      "host": "postgres_lake",
-      "schema": "postgres",
-      "database": "postgres",
-      "login": "postgres",
-      "user": "postgres",
-      "password": "postgres",
-      "port": 5432
-    }
-
+[
+  {
+    "conn_id": "postgres_conn",
+    "conn_type": "postgres",
+    "host": "postgres_lake",
+    "schema": "postgres",
+    "database": "postgres",
+    "login": "postgres",
+    "user": "postgres",
+    "password": "postgres",
+    "port": 5432
+  }
+]

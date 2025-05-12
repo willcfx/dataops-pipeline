@@ -4,6 +4,7 @@ from airflow.operators.python import PythonOperator
 from datetime import datetime
 from flow.bronze import camada_bronze
 from flow.silver import camada_silver
+from flow.gold import camada_gold
 
 from scripts.bronze.start import DatabaseInitializer
 
@@ -43,6 +44,7 @@ with DAG(
 
     bronze = camada_bronze()
     silver = camada_silver()
+    gold = camada_gold()
 
     # Definir o fluxo geral da DAG
-    inicializar_banco_task >> bronze >> silver >> end
+    inicializar_banco_task >> bronze >> silver >> gold >> end

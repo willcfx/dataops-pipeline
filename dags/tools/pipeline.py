@@ -49,3 +49,4 @@ class Pipeline(object):
     TABLE_D_VIA = 'silver.d_via'
     TABLE_F_EXPORTACOES_ESTADOS = 'silver.f_exportacoes_estados'
     TABLE_F_IMPORTACOES_ESTADOS = 'silver.f_importacoes_estados'
+    TABLE_F_COMEX_ESTADOS = 'gold.fact_comercio_exterior'

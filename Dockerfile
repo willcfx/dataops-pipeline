@@ -38,12 +38,6 @@ COPY requirements.txt /requirements.txt
 # Instala as dependências adicionais via requirements.txt
 RUN pip install --no-cache-dir -r /requirements.txt
 
-# Garante que o diretório de profiles exista
-RUN mkdir -p /root/.dbt
-
-# Copia o profiles.yml do dbt
-COPY ./dbt/comercio_exterior/profiles.yml /root/.dbt/profiles.yml
-
 # Expondo a porta padrão do Airflow Webserver e postgres
 EXPOSE 8080
 EXPOSE 5432
